@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Facial Reaction System</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Load face-api library -->
+  <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Facial Reaction Detection</h1>
+
+    <div id="status" style="color: orange; font-weight: bold; margin: 10px 0; font-size: 16px;">Loading...</div>
+
+    <div class="camera-wrapper">
+      <video id="video" autoplay playsinline muted width="640" height="480"></video>
+      <canvas id="overlay"></canvas>
+    </div>
+
+    <div id="mood">Mood: Detecting...</div>
+    <div id="error" style="color: red; margin-top: 10px;"></div>
+    <footer>Developed by Sunit Katuwal (BSc CSIT)</footer>
+  </div>
+</body>
+</html>
